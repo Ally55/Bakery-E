@@ -1,0 +1,97 @@
+/* menu */
+
+.title {
+    font-family: 'Cormorant', serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 80px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+
+nav {
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+nav .item {
+    margin: 50px;
+}
+
+.menu-logo {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    color: rgb(240,240,240);
+}
+
+.home-section {
+    height: 850px;
+    background-image: url('../images/home.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.home-title{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.home-resume {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight:300;
+    margin: 70px 20%;
+    background-color: rgba(0, 0, 0, 0.40);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.home-btn {
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    cursor: pointer;
+}
+.home-btn:hover {
+    background-color: rgba(72,72,72, 0.50);
+}
+.home-btn:focus {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
