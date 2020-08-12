@@ -39,6 +39,7 @@ nav .item {
     background-position: center;
     background-size: cover;
     text-align: center;
+    position: relative;
 }
 
 .home-title{
@@ -91,7 +92,31 @@ a:hover{
 }
 
 
+
+/* bread icon */
+.bread-icon {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+.circle-icon {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: white;
+}
+
+.about-section {
+    height:500px;
 }
