@@ -33,6 +33,17 @@ nav .item {
     color: rgb(240,240,240);
 }
 
+/* social logo */
+
+.logos{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.fab {
+    margin: 10px;
+}
+
 .home-section {
     height: 850px;
     background-image: url('../images/home.jpg');
@@ -93,30 +104,150 @@ a:hover{
 
 
 
+
 /* bread icon */
 .bread-icon {
     position: absolute;
-    bottom: -35px;
+    bottom: -45px;
     left: 0;
     right: 0;
     text-align: center;
 
 }
 .circle-icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: inline-flex;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.35);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
 }
 
+.fas {
+    color: white;
+    font-size:50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Section */
+.about-section {
+    background-image: url("../images/about_section.png");
+    height: 850px;
+}
+
+.bakery-description {
+    padding-top: 5%;
+    margin-left: 10%;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+}
+
+.about-title {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5em;
+    color: rgb(105,105,105);
+}
+
+.short-intro {
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    color: rgb(143, 68, 1);
+    margin-bottom: 50px;
+}
+
+.about-us {
+    color: rgb(105,105,105);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.chef {
+    border-radius: 60%;
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+    height: auto;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(105,105,105);
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.hr1 {
+    width: 20%;
+    /* margin-left: 50px; */
+    left: 50px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.hr2 {
+    display: inline-flex;
+    width: 20%;
+    right: 50px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.chef-section {
+    position: relative;
+}
+
+.chef-quote {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(143, 68, 1);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+/* About section - descriptive images */
+.images-container {
+    position: absolute;
+    /* width: 750px;
+    height: 600px;
+    right: 300px;
+    top: 950px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 950px;
+    top: 1000px;
+    width: 800px;
+}
+
+
+.img {
+    height: 250px;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+}
+    
+
+/* .i3 {
+    position: absolute;
+    right: 1px;
+}
+
+.i4 {
+    position: absolute;
+    right: 1px;
+    top: 10px;
+} */
+
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: white;
-}
-
-.about-section {
-    height:500px;
 }
