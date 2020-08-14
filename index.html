@@ -23,18 +23,10 @@
                 <h1 class="menu-logo">Baked Delight</h1>
 
                 <nav>
-                    <a class="m-l-50px m-r-50px" href="#home-section">Home</a>
-                    
-
+                    <a class="m-l-50px m-r-50px" href="#home-section">Home</a> 
                     <span>-</span> 
-
-                   
                     <a class="m-l-50px m-r-50px" href="#about">About</a>
-                    
-
                     <span>-</span>
-
-                    
                     <a class="m-l-50px" href="#products">Our products</a>
                 </nav>
     
@@ -50,14 +42,14 @@
                 <p class="home-tagline">A creative bakery shop offering fluffy breads and delicious desserts made entirely from scratch using fresh, natural ingredients.</p>
             </div>
             
-            <button class="home-btn">Our menu</button>
+            <button class="home-btn">
+                <a href="#products">Our menu</a>
+            </button>
 
             <div class="delimiter-icon-container">
                 <div class="circle-icon">
-                    <i class="fas fa-bread-slice"></i>
-                    <!-- <img src="https://img.icons8.com/cotton/64/000000/bread--v2.png"/> -->
+                    <i class="fas fa-bread-slice" id="bread-slice"></i>
                 </div>
-                
             </div>
         </section>
 
@@ -88,23 +80,48 @@
 
             <div class="images-container">
                 <div>
-                    <img class="img i1" src="./assets/images/p1.jpg">
+                    <img src="./assets/images/p1.jpg">
                 </div>
 
                 <div>
-                    <img class="img i2" src="./assets/images/p2.jpg">
+                    <img src="./assets/images/p2.jpg">
                 </div>
 
                 <div>
-                    <img class="img i3" src="./assets/images/p3.jpg">
+                    <img src="./assets/images/p3.jpg">
                 </div>
 
                 <div>
-                    <img class="img i4" src="./assets/images/p4.jpg">
+                    <img src="./assets/images/p4.jpg">
                 </div>
                 
+                <i class="fas fa-certificate centered-images"></i>
             </div>
         </section>
+        
+        <section class="products" id="products">
+            <div class="products-container">
+
+                <div class="recipe-image">  
+                </div>
+                
+
+                <div class="recipe-description">
+                    <h1 class="product-name">Tasty pancakes</h1>
+                    <p class="catchy-resume">Season favourite</p>
+                    <p class="recipe-ingredients">Six pancakes made from flour milled in the Smokies. Served with nuts, warm maple syrup, and real whipped butter. It’s what we are all about!</p>
+
+                    <div class="switch-image-recipes">
+                        <button class="prev-image-button"> < </button>
+                        <img class="circle-image" src="./assets/images/croissant.jpg">
+                        <img class="circle-image" src="./assets/images/dessert1.jpg">
+                        <img class="circle-image" src="./assets/images/sandwich.jpg">
+                        <button class="next-image-button"> > </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
    </body>
 </html>
 
