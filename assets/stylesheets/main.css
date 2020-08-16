@@ -287,6 +287,7 @@ h3 {
 
 .recipe-description {
     width: 70%;
+    position: relative;
 }
 
 .product-name {
@@ -342,7 +343,31 @@ h3 {
    
 }
 
+.recipe-time {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    top: -75px;
+    right: -75px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(143, 68, 1);
+
+}
+
+.recipe-minutes {
+    font-size: 30px;
+    margin: 20px;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     color: white;
 }
+
