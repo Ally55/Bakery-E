@@ -9,6 +9,9 @@ const recipeImage = document.querySelector('.recipe-image');
 let currentRecipeIndex = 0;
 
 
+
+
+
 const recipes = [
 {   
         img: 'assets/images/pancakes.jpg',
@@ -139,3 +142,28 @@ function switchNextSmallImages(direction){
 
 prevButton.addEventListener('click', handlePrevButton);
 nextButton.addEventListener('click', handleNextButton);
+
+
+// Responsive Burger Button
+const burger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu-responsive');
+
+function handleBurgerButton() {
+    // burger.classList.toggle('is-active')
+    // burger.classList === 'is-active'
+
+    if(burger.classList.toggle('is-active')) {
+        menu.style.display = 'block';
+        
+    } else {
+        menu.style.display = 'none';
+    }
+
+
+   
+}
+
+burger.addEventListener('click', handleBurgerButton);
+
+
+

@@ -22,20 +22,45 @@
             <menu>
                 <h1 class="menu-logo">Baked Delight</h1>
 
-                <nav>
-                    <a class="m-l-50px m-r-50px" href="#home-section">Home</a> 
-                    <span>-</span> 
-                    <a class="m-l-50px m-r-50px" href="#about">About</a>
-                    <span>-</span>
-                    <a class="m-l-50px" href="#products">Our products</a>
+                <nav class="hidden-xs">
+                    <a class="m-l-50px m-r-50px home" href="#home-section">Home</a> 
+                    
+                    <a class="m-l-50px m-r-50px about" href="#about">About</a>
+                   
+                    <a class="m-l-50px our-products" href="#products">Products</a>
                 </nav>
-    
-                <div class="menu-socials">
+
+                
+                <!-- <i class="fas fa-bars hidden-lg"></i> -->
+
+                <div class="hamburger hamburger--slider">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+
+                <div class="menu-socials hidden-xs">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
                 </div>
             </menu>
+
+            <div class="menu-responsive hidden-lg">
+                    
+                <a class="nav-elements" href="#home-section">Home</a>
+                <p class="menu-paragraphs">Introducing you to our world full of fresh and natural ingredients.</p>
+                <a class="nav-elements" href="#about">About</a>
+                <p class="menu-paragraphs">Professionalism for our products. Come and meet the best chefs from all over the world.</p>
+                <a class="nav-elements" href="#products">Products</a>
+                <p class="menu-paragraphs">Take a look at our products and choose the best meal for you.</p>
+
+                <div class="socials-responsive">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
 
             <div>
                 <h1 class="home-title">Bake & Take</h1>
@@ -46,7 +71,7 @@
                 <a href="#products">Our menu</a>
             </button>
 
-            <div class="delimiter-icon-container">
+            <div class="delimiter-icon-container hidden-xs">
                 <div class="circle-icon">
                     <i class="fas fa-bread-slice" id="bread-slice"></i>
                 </div>
@@ -95,21 +120,19 @@
                     <img src="./assets/images/p4.jpg">
                 </div>
                 
-                <i class="fas fa-certificate centered-images"></i>
+                <i class="fas fa-certificate centered-images hidden-xs hidden-lg"></i>
             </div>
         </section>
         
         <section class="products" id="products">
             <div class="products-container">
 
-                <div class="recipe-image">  
-                </div>
+                <div class="recipe-image"></div>
                 
-
-                <div class="recipe-description">
-                    <h1 class="product-name">Tasty pancakes</h1>
-                    <p class="catchy-resume">Season favourite</p>
-                    <p class="recipe-ingredients">Six pancakes made from flour milled in the Smokies. Served with nuts, warm maple syrup, and real whipped butter. It’s what we are all about!</p>
+                    <div class="recipe-description">
+                        <h1 class="product-name">Tasty pancakes</h1>
+                        <p class="catchy-resume">Season favourite</p>
+                        <p class="recipe-ingredients">Six pancakes made from flour milled in the Smokies. Served with nuts, warm maple syrup, and real whipped butter. It’s what we are all about!</p>
 
                     <div class="switch-image-recipes">
                         <button class="prev-image-button"> < </button>
@@ -118,7 +141,7 @@
                         <img class="circle-image" src="./assets/images/sandwich.jpg">
                         <button class="next-image-button"> > </button>
 
-                        <div class="recipe-time">
+                        <div class="recipe-time hidden-xs">
                             <p>Ready in<h2 class="recipe-minutes">40</h2>mins</p>
                         </div>
                     </div>
@@ -126,8 +149,38 @@
             </div>
         </section>
 
-        <script src="./assets/scripts/index.js"></script>
+        <footer>
+            <div class="footer-container">
+                <div class="footer1">
+                    <h1 class="footer-logo">Baked Delight</h1>
 
+                    <nav class="footer-nav">
+                        <a class="footer-nav-elements" href="#home-section">Home</a> 
+                    
+                        <a class="footer-nav-elements" href="#about">About</a>
+                    
+                        <a class="footer-nav-elements" href="#products">Our products</a>
+                    </nav>
+                </div>
+
+                
+                <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.180954483837!2d-87.6863658848648!3d41.91046857136742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2bb93cb956d%3A0xb1782c7b23489ee5!2sBake!5e0!3m2!1sro!2sro!4v1597737331431!5m2!1sro!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="socials hidden-xs">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                </div>
+
+                <hr class="footer-hr">
+
+                <p class="copyright">&copy;Baked Delight 2020 All Rights Reserved</p>
+
+                
+            </div>
+        </footer>
+        <script src="./assets/scripts/index.js"></script>
    </body>
+
+
 </html>
 

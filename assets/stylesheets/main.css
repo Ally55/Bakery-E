@@ -1,3 +1,19 @@
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 /* menu */
 
 .title {
@@ -106,9 +122,9 @@ a:hover{
 }
 
 
-
-
 /* bread icon */
+
+
 .delimiter-icon-container {
     position: absolute;
     bottom: -45px;
@@ -190,7 +206,6 @@ h3 {
 
 .hr1 {
     width: 20%;
-    /* margin-left: 50px; */
     left: 50px;
     margin-top: 70px;
     position: absolute;
@@ -221,6 +236,7 @@ h3 {
 }
 
 /* About section - descriptive images */
+
 .images-container {
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +247,7 @@ h3 {
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 10%;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
 }
 
@@ -244,17 +260,16 @@ h3 {
     justify-content: center;
 }
 
-.centered-images {
+/* .centered-images {
     color: rgba(255,255,255, 0.9);
     font-size: 150px;
     position: absolute; 
-    margin-top: -100px;
-}
+    margin-top: -120px;
+} */
     
 
-
-
 /* Products */
+
 .products {
     background-image: url(../images/products2.jpg);
     height: 800px;
@@ -358,7 +373,6 @@ h3 {
     font-size: 15px;
     font-weight: bold;
     color: rgb(143, 68, 1);
-
 }
 
 .recipe-minutes {
@@ -366,8 +380,360 @@ h3 {
     margin: 20px;
 }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
+/* Footer */
+
+.footer-container {
+    padding: 30px;
+    background-color: white;
+    height: 200px;
 }
 
+.footer-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: black;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.footer-nav-elements {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+.footer-nav-elements:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.footer-hr {
+    margin-top: 30px;
+    color: rgb(211,211,211);
+}
+
+.copyright {
+    color: black;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.socials {
+    color: black;
+    height: 100px;
+    width: 25%;
+    float: right;
+    margin-top: -160px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    margin-right: 40px;
+}
+
+.footer1 {
+    width: 75%;
+}
+
+iframe {
+    margin-left: 500px;
+    margin-top: -155px;
+    width: 400px;
+    height: 180px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+
+
+    /* Home Page */
+    .home-section {
+        min-height: 800px;
+    }
+    .menu {
+        height: 50px;
+    }
+
+    .menu-logo {
+        font-size: 30px;
+        margin-left: -10px;
+    }
+
+    .home-title {
+        font-size: 40px;
+    }
+
+    nav {
+        /* display: inline-flex; */
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menu-responsive {
+        position: absolute;
+        font-size: 20px;
+        background-color: #f5f0ea;
+        min-height: 90vh;
+        width: 100%;
+        /* top: 0; */
+        padding: 20px;
+        display: none;
+    }
+
+    .socials-responsive {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        color: black;
+    }
+
+    .nav-elements {
+        color: black;
+        font-size: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        font-family: 'Cormorant', serif;
+        border-bottom: 1px solid black;
+        /* margin: 10px; */
+    }
+
+    .nav-elements:hover {
+        color: gray;
+    }
+
+    .fab-fa-twitter-responsive,
+    .fab-fa-facebook-responsive,
+    .fab-fa-instagram-responsive {
+        color: black;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column; 
+        margin-top: 350px;
+        margin-left: 30px;
+    }
+    
+    .home-tagline {
+        height: 65vw;
+        font-size: 20px;
+    }
+
+    .menu-paragraphs {
+        color: black;
+        text-align: left;
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    /* Burger */
+
+    .hamburger {
+        padding: 15px 15px;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        /* color: inherit; */
+        color: white;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible; 
+
+        z-index: 2;
+    }
+
+    .hamburger:hover {
+        opacity: 0.7; 
+    }
+
+    .hamburger.is-active:hover {
+        opacity: 0.7; 
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: white; 
+    }
+      
+    .hamburger-box {
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+      
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+        margin-top: -2px;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease; 
+    }
+
+    .hamburger-inner::before, .hamburger-inner::after {
+        content: "";
+        display: block;
+    }
+
+    .hamburger-inner::before {
+        top: -10px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -10px;
+    }
+
+    .hamburger--slider .hamburger-inner {
+        top: 2px;
+    }
+
+    .hamburger--slider .hamburger-inner::before {
+          top: 10px;
+          transition-property: transform, opacity;
+          transition-timing-function: ease;
+          transition-duration: 0.15s;
+    }
+
+    .hamburger--slider .hamburger-inner::after {
+        top: 20px;
+    }
+      
+    .hamburger--slider.is-active .hamburger-inner {
+        transform: translate3d(0, 10px, 0) rotate(45deg);
+    }
+
+    .hamburger--slider.is-active .hamburger-inner::before {
+        transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+        opacity: 0;
+    }
+
+    .hamburger--slider.is-active .hamburger-inner::after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg);
+    }
+
+
+    /* About Section */
+    .about-section {
+        min-height: 800px;
+    }
+    .bakery-description {
+        margin: 0;
+        padding: 10vw;
+    }
+
+    .chef-quote {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .hr1 {
+        left: 5vw;
+    }
+
+    .hr2 {
+        right: 5vw;
+    }
+
+    .images-container {
+        background-image: url(../images/about_section.png);
+        flex: none;
+        flex-direction: column;
+        margin-left: 0;
+        position: static;
+        margin-top: 48vw;
+        /* padding: 18vw; */
+        min-height: inherit;
+        width: 100%;
+    }
+
+    .images-container img {
+        margin-left: 30%;
+    }
+
+    /* Products Section */
+    .products {
+        min-height: 400vw;
+    }
+
+    .products-container {
+        margin-bottom: -150%;
+        margin-top: 50%;
+        width: 90vw;
+        height: 150vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe-image{
+        height: 50%;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .recipe-description {
+        width: 100%;
+    }
+
+    .switch-image-recipes {
+        margin-left: 10%;
+        justify-content: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .recipe-ingredients {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        padding: 5vw;
+    }
+    .footer-logo {
+        margin: 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -5vw;
+    }
+
+    .copyright {
+        font-size: 4vw;
+    }
+  }
+   
