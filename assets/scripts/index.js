@@ -8,10 +8,6 @@ const recipeMinutes = document.querySelector('.recipe-minutes');
 const recipeImage = document.querySelector('.recipe-image');
 let currentRecipeIndex = 0;
 
-
-
-
-
 const recipes = [
 {   
         img: 'assets/images/pancakes.jpg',
@@ -75,8 +71,9 @@ function populateRecipe(currentRecipe){
 
 
 function handlePrevButton() {
+    switchBackSmallImages('back');
+
     const lastIndex = recipes.length - 1;
-    // console.log(currentRecipeIndex);
     if (currentRecipeIndex === 0) {
         currentRecipeIndex = lastIndex;
     }
@@ -87,10 +84,11 @@ function handlePrevButton() {
     populateRecipe(currentRecipe);
 
 
-    switchBackSmallImages('back');
 }
 
 function handleNextButton() {
+    switchNextSmallImages('forward');
+    
     if (currentRecipeIndex === recipes.length - 1) {
         currentRecipeIndex = 0;
     } else {
@@ -99,7 +97,7 @@ function handleNextButton() {
     const currentRecipe = recipes[currentRecipeIndex];
     populateRecipe(currentRecipe);
 
-    switchNextSmallImages('forward');
+    
 }
 
 function switchBackSmallImages(direction) {
@@ -149,18 +147,12 @@ const burger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu-responsive');
 
 function handleBurgerButton() {
-    // burger.classList.toggle('is-active')
-    // burger.classList === 'is-active'
-
     if(burger.classList.toggle('is-active')) {
         menu.style.display = 'block';
         
     } else {
         menu.style.display = 'none';
     }
-
-
-   
 }
 
 burger.addEventListener('click', handleBurgerButton);

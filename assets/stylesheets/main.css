@@ -7,14 +7,13 @@ body {
     color: white;
 }
 
-
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-/* menu */
+/* MENU */
 
 .title {
     font-family: 'Cormorant', serif;
@@ -46,7 +45,7 @@ nav {
     color: rgb(240,240,240);
 }
 
-/* social logo */
+/* SOCIAL LOGO */
 
 .menu-socials {
     font-size: 20px;
@@ -57,11 +56,14 @@ nav {
 .fa-twitter,
 .fa-instagram {
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.80);
 }
 
 .menu-socials .fab {
     margin: 10px;
 }
+
+/* HOME SECTION */
 
 .home-section {
     height: 800px;
@@ -122,7 +124,7 @@ a:hover{
 }
 
 
-/* bread icon */
+/* DELIMITER ICON */
 
 
 .delimiter-icon-container {
@@ -148,7 +150,8 @@ a:hover{
     align-items: center;
 }
 
-/* About Section */
+/* ABOUT SECTION */
+
 .about-section {
     background-image: url("../images/about_section.png");
     height: 800px;
@@ -202,6 +205,7 @@ h3 {
 
 .chef-section {
     position: relative;
+    margin-top: -5%;
 }
 
 .hr1 {
@@ -235,20 +239,20 @@ h3 {
     font-weight: lighter;
 }
 
-/* About section - descriptive images */
+/* About section - DESCRIPTIVE IMAGES */
 
 .images-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex: 1;
-    width: 600px;
+    width: 300px;
     align-content: flex-start;
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 10%;
-    /* position: relative; */
     justify-content: center;
+    padding: 30px;
 }
 
 .images-container img {
@@ -260,15 +264,8 @@ h3 {
     justify-content: center;
 }
 
-/* .centered-images {
-    color: rgba(255,255,255, 0.9);
-    font-size: 150px;
-    position: absolute; 
-    margin-top: -120px;
-} */
-    
 
-/* Products */
+/* OUR PRODUCTS */
 
 .products {
     background-image: url(../images/products2.jpg);
@@ -284,7 +281,7 @@ h3 {
 .products-container {
     background-color: white;
     height: 400px;
-    width: 55%;
+    min-width: 55%;
     border-radius: 1em;
 
     display: flex;
@@ -355,6 +352,7 @@ h3 {
     border-radius: 100%;
     margin-top: 25px;
     background-color: rgba(255, 255, 255, 0.80);
+    cursor: pointer;
    
 }
 
@@ -380,20 +378,27 @@ h3 {
     margin: 20px;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer-container {
     padding: 30px;
     background-color: white;
     height: 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-logo {
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
-    color: black;
+    color: rgb(86 67 49);
     margin-top: 0px;
     margin-left: 30px;
+    display: inline;
+}
+
+.footer-nav {
+    width: 200px;
 }
 
 .footer-nav-elements {
@@ -402,35 +407,27 @@ h3 {
     margin-left: 50px;
     margin-top: 20px;
     font-size: 20px;
-    color: black;
+    color: rgb(86 67 49);
 }
 .footer-nav-elements:hover {
     color: grey;
     cursor: pointer;
 }
 
-.footer-hr {
-    margin-top: 30px;
-    color: rgb(211,211,211);
-}
 
 .copyright {
     color: black;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    min-width: 125%;
 }
 
 .socials {
-    color: black;
     height: 100px;
     width: 25%;
-    float: right;
-    margin-top: -160px;
-    display: flex;
-    flex-direction: row;
     font-size: 25px;
     text-align: right;
-    justify-content: flex-end;
 }
 
 .fa-facebook,
@@ -439,24 +436,48 @@ h3 {
     margin-right: 40px;
 }
 
+.facebook-footer-socials {
+    color: #4267B2;
+}
+
+.twitter-footer-socials { 
+    color: #1DA1F2;
+}
+
+.instagram-footer-socials {
+    border-radius: 30%;
+    color: purple;
+}
+
+
 .footer1 {
-    width: 75%;
+    width: 200px;
+
+}
+
+.map-container {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+footer {
+    position: relative;
 }
 
 iframe {
-    margin-left: 500px;
-    margin-top: -155px;
-    width: 400px;
     height: 180px;
 }
 
 
-/* Responsive */
+/* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 500px) {
 
 
-    /* Home Page */
+    /* HOME SECTION */
+
     .home-section {
         min-height: 800px;
     }
@@ -474,7 +495,6 @@ iframe {
     }
 
     nav {
-        /* display: inline-flex; */
         font-size: 20px;
         text-align: center;
     }
@@ -485,7 +505,6 @@ iframe {
         background-color: #f5f0ea;
         min-height: 90vh;
         width: 100%;
-        /* top: 0; */
         padding: 20px;
         display: none;
     }
@@ -504,13 +523,9 @@ iframe {
         font-size: 40px;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-right: 20px;
+        margin: 30px 20px;
         font-family: 'Cormorant', serif;
         border-bottom: 1px solid black;
-        /* margin: 10px; */
     }
 
     .nav-elements:hover {
@@ -530,7 +545,7 @@ iframe {
     
     .home-tagline {
         height: 65vw;
-        font-size: 20px;
+        font-size: 5vw;
     }
 
     .menu-paragraphs {
@@ -540,7 +555,7 @@ iframe {
         margin: 0 20px;
     }
 
-    /* Burger */
+    /* BURGER */
 
     .hamburger {
         padding: 15px 15px;
@@ -551,7 +566,6 @@ iframe {
         transition-duration: 0.15s;
         transition-timing-function: linear;
         font: inherit;
-        /* color: inherit; */
         color: white;
         text-transform: none;
         background-color: transparent;
@@ -641,19 +655,24 @@ iframe {
         transform: translate3d(0, -20px, 0) rotate(-90deg);
     }
 
+    /* ABOUT SECTION */
 
-    /* About Section */
     .about-section {
         min-height: 800px;
     }
+
+    .short-intro {
+        margin-bottom: 10%;
+    }
+
     .bakery-description {
         margin: 0;
-        padding: 10vw;
+        padding: 5%;
     }
 
     .chef-quote {
         margin: 0;
-        font-size: 25px;
+        font-size: 5vw;
     }
 
     .hr1 {
@@ -671,16 +690,12 @@ iframe {
         margin-left: 0;
         position: static;
         margin-top: 48vw;
-        /* padding: 18vw; */
         min-height: inherit;
         width: 100%;
     }
 
-    .images-container img {
-        margin-left: 30%;
-    }
+    /* PRODUCTS SECTION */
 
-    /* Products Section */
     .products {
         min-height: 400vw;
     }
@@ -716,10 +731,11 @@ iframe {
         text-align: center;
     }
 
-    /* Footer */
+    /* FOOTER */
 
     .footer-container {
         padding: 5vw;
+        margin-left: 5%;
     }
     .footer-logo {
         margin: 0;
@@ -733,7 +749,110 @@ iframe {
     }
 
     .copyright {
-        font-size: 4vw;
+        font-size: 3vw;
     }
   }
    
+
+  @media screen and (max-width: 1050px) {
+      /* MENU SECTION */
+    .home,
+    .about,
+    .products {
+        margin: 0;
+    }
+
+    .menu-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+        padding-top: 2%;
+    }
+    
+    .chef-section,
+    .chef-quote {
+       margin-top: -5%;
+   }
+
+   .images-container {
+       padding: 0;
+       margin: 0;
+       margin-right: 3%;
+       align-content: center;
+   }
+
+   .bakery-description {
+       margin-left: 3%;
+       margin-top: 5%
+   }
+
+   /* PRODUCTS SECTION */
+   .switch-image-recipes {
+       width: 90%;
+   }
+
+   .recipe-ingredients {
+       margin-top: 10%;
+   }
+
+   .product-name {
+       margin-top: 15%;
+   }
+   
+  }
+
+ /* RESPONSIVE DESIGN FOR TABLET */
+  @media screen and (max-width: 900px) {
+     .images-container {
+         margin-top: 10%;
+     }
+
+     .chef-section {
+         margin-top: -10%;
+     }
+
+     .chef-title {
+        margin: 0 0 5%;
+     }
+
+     .products-container {
+         width: 75%;
+     }
+
+     .footer-container {
+         padding: 2%;
+     }
+
+     .recipe-time {
+         top: -100px;
+     }
+
+     iframe {
+         width: 50vw;
+         margin-left: 5vw;
+     }
+
+  }
+
+@media screen and (max-width:4000px) {
+    .home-tagline{
+        max-width: 1000px;
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-container {
+        margin-top: 100px;
+    }
+
+    .recipe-time {
+        right: 0;
+    }
+}

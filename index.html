@@ -12,9 +12,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"> <!--for h1-->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!--for the logo of the website-->
         <link href="assets/stylesheets/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/stylesheets/normalize.css">
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
-        <link rel="stylesheet" href="assets/stylesheets/atomic.css">
+        <link href="assets/stylesheets/normalize.css" rel="stylesheet">
+        <link href="assets/stylesheets/main.css" rel="stylesheet" >
+        <link href="assets/stylesheets/atomic.css" rel="stylesheet">
     </head>
 
     <body>
@@ -22,38 +22,36 @@
             <menu>
                 <h1 class="menu-logo">Baked Delight</h1>
 
-                <nav class="hidden-xs">
-                    <a class="m-l-50px m-r-50px home" href="#home-section">Home</a> 
+                <nav class="menu-nav hidden-xs">
+                    <a class="m-r-md home" href="#home-section">Home</a> 
                     
-                    <a class="m-l-50px m-r-50px about" href="#about">About</a>
+                    <a class="m-l-lg m-r-md about" href="#about">About</a>
                    
-                    <a class="m-l-50px our-products" href="#products">Products</a>
+                    <a class="m-l-lg our-products" href="#products">Products</a>
                 </nav>
 
-                
-                <!-- <i class="fas fa-bars hidden-lg"></i> -->
 
-                <div class="hamburger hamburger--slider">
+                <div class="hamburger hamburger--slider hidden-lg">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>
 
                 <div class="menu-socials hidden-xs">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </menu>
 
             <div class="menu-responsive hidden-lg">
                     
                 <a class="nav-elements" href="#home-section">Home</a>
-                <p class="menu-paragraphs">Introducing you to our world full of fresh and natural ingredients.</p>
+                    <p class="menu-paragraphs">Introducing you to our world full of fresh and natural ingredients.</p>
                 <a class="nav-elements" href="#about">About</a>
-                <p class="menu-paragraphs">Professionalism for our products. Come and meet the best chefs from all over the world.</p>
+                    <p class="menu-paragraphs">Professionalism for our products. Come and meet the best chefs from all over the world.</p>
                 <a class="nav-elements" href="#products">Products</a>
-                <p class="menu-paragraphs">Take a look at our products and choose the best meal for you.</p>
+                    <p class="menu-paragraphs">Take a look at our products and choose the best meal for you.</p>
 
                 <div class="socials-responsive">
                     <i class="fab fa-facebook"></i>
@@ -62,7 +60,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="home-container">
                 <h1 class="home-title">Bake & Take</h1>
                 <p class="home-tagline">A creative bakery shop offering fluffy breads and delicious desserts made entirely from scratch using fresh, natural ingredients.</p>
             </div>
@@ -80,7 +78,6 @@
 
 
         <section class="about-section" id="about">
-           
             <div class="bakery-description">
                 <h1 class="about-title">Art of cakes</h1>
                 <p class="short-intro">Good bread for a good day. We create delicious memories.</p>
@@ -89,19 +86,15 @@
                     that are harmful for health.
                 </p>
 
-            <h3>Chef Cook</h3>
+                <h3 class="chef-title">Chef Cook</h3>
             
-            <div class="chef-section">
-                <hr class="hr1">
-                <hr class="hr2">
-                <img class="chef" src="./assets/images/chef7.png">
-                <p class="chef-quote">Techniques are not the most difficult to teach. The attitudes chefs take are much more important.</p>
-                
+                <div class="chef-section">
+                    <hr class="hr1">
+                    <hr class="hr2">
+                    <img class="chef" src="./assets/images/chef7.png">
+                    <p class="chef-quote">Techniques are not the most difficult to teach. The attitudes chefs take are much more important.</p>              
+                </div>
             </div>
-
-            </div>
-
-
 
             <div class="images-container">
                 <div>
@@ -120,21 +113,19 @@
                     <img src="./assets/images/p4.jpg">
                 </div>
                 
-                <i class="fas fa-certificate centered-images hidden-xs hidden-lg"></i>
             </div>
         </section>
         
         <section class="products" id="products">
-            <div class="products-container">
-
+            <div class="products-container small-size">
                 <div class="recipe-image"></div>
                 
-                    <div class="recipe-description">
-                        <h1 class="product-name">Tasty pancakes</h1>
-                        <p class="catchy-resume">Season favourite</p>
-                        <p class="recipe-ingredients">Six pancakes made from flour milled in the Smokies. Served with nuts, warm maple syrup, and real whipped butter. It’s what we are all about!</p>
+                <div class="recipe-description">
+                    <h1 class="product-name">Tasty pancakes</h1>
+                    <p class="catchy-resume">Season favourite</p>
+                    <p class="recipe-ingredients">Six pancakes made from flour milled in the Smokies. Served with nuts, warm maple syrup, and real whipped butter. It’s what we are all about!</p>
 
-                    <div class="switch-image-recipes">
+                    <div class="switch-image-recipes m-r-md">
                         <button class="prev-image-button"> < </button>
                         <img class="circle-image" src="./assets/images/croissant.jpg">
                         <img class="circle-image" src="./assets/images/dessert1.jpg">
@@ -161,26 +152,29 @@
                     
                         <a class="footer-nav-elements" href="#products">Our products</a>
                     </nav>
+
+                    <p class="copyright">&copy;Baked Delight 2020 All Rights Reserved</p>
+                    
+                </div>
+
+                <div class="map-container">
+                    <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.180954483837!2d-87.6863658848648!3d41.91046857136742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2bb93cb956d%3A0xb1782c7b23489ee5!2sBake!5e0!3m2!1sro!2sro!4v1597737331431!5m2!1sro!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
 
                 
-                <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.180954483837!2d-87.6863658848648!3d41.91046857136742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2bb93cb956d%3A0xb1782c7b23489ee5!2sBake!5e0!3m2!1sro!2sro!4v1597737331431!5m2!1sro!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <div class="socials hidden-xs">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+                <div class="socials hidden-xs hidden-md">
+                    <a href="#"><i class="fab fa-facebook facebook-footer-socials"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-footer-socials"></i></a>
+                    <a href="#"><i class="fab fa-instagram instagram-footer-socials"></i></a>
                 </div>
 
-                <hr class="footer-hr">
-
-                <p class="copyright">&copy;Baked Delight 2020 All Rights Reserved</p>
-
-                
+                <!-- <hr class="footer-hr"> -->
+    
             </div>
         </footer>
+
         <script src="./assets/scripts/index.js"></script>
    </body>
-
 
 </html>
 

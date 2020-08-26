@@ -1,9 +1,15 @@
-.m-l-50px {
+.m-l-lg {
     margin-left: 100px;
 }
 
-.m-r-50px {
+.m-r-md {
     margin-right: 50px;
+}
+
+@media (max-width: 350px) {
+    .small-size {
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -16,5 +22,22 @@
     .hidden-lg {
         display: none !important;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .hidden-md {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .m-r-md {
+      margin: 5%;
+  }
+  .m-l-lg {
+      margin: 5%;
+  }
+
 }
 
