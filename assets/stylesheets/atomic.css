@@ -30,6 +30,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .hidden-landscape {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1050px) {
 
   .m-r-md {

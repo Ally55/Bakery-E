@@ -227,7 +227,7 @@ h3 {
     border-radius: 60%;
     border: 0;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 45px;
     width: 100px;
     height: auto;
 }
@@ -518,7 +518,7 @@ iframe {
     }
 
     .nav-elements {
-        color: black;
+        color: #6c5644;
         font-size: 40px;
         display: flex;
         flex-wrap: wrap;
@@ -543,12 +543,11 @@ iframe {
     }
     
     .home-tagline {
-        height: 65vw;
         font-size: 5vw;
     }
 
     .menu-paragraphs {
-        color: black;
+        color: #6c5644;
         text-align: left;
         font-size: 18px;
         margin: 0 20px;
@@ -744,11 +743,35 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: -5vw;
+        margin-left: 5px;
     }
 
     .copyright {
         font-size: 3vw;
+    }
+  }
+
+  /* DESIGN FOR LANDSCAPE */
+
+  @media screen and (max-width: 600px) {
+    menu {
+        padding: 0 30px;
+    }
+
+    .menu-logo {
+        font-size: 25px;
+    }
+
+    .home-tagline {
+        margin: 10px;
+    }
+
+    .home-btn {
+        margin-top: 20px;
+    }
+
+    .about-section {
+        height: 900px;
     }
   }
    
@@ -795,10 +818,11 @@ iframe {
 
    .recipe-ingredients {
        margin-top: 10%;
+       width: unset;
    }
 
    .product-name {
-       margin-top: 15%;
+       margin-top: 10px;
    }
    
   }
@@ -818,7 +842,7 @@ iframe {
      }
 
      .products-container {
-         width: 75%;
+         width: 300px;
      }
 
      .footer-container {
