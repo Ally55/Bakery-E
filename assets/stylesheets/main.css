@@ -281,7 +281,6 @@ h3 {
 .products-container {
     background-color: white;
     height: 400px;
-    min-width: 55%;
     border-radius: 1em;
 
     display: flex;
@@ -298,7 +297,7 @@ h3 {
 }
 
 .recipe-description {
-    width: 800px;
+    width: 700px;
     position: relative;
 }
 
@@ -842,7 +841,7 @@ iframe {
      }
 
      .products-container {
-         width: 300px;
+         width: 400px;
      }
 
      .footer-container {

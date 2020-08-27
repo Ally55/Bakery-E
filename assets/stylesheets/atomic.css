@@ -7,9 +7,9 @@
 }
 
 @media (max-width: 350px) {
-    .small-size {
+    /* .small-size {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 500px) {
