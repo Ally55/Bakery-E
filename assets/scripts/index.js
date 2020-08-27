@@ -56,7 +56,7 @@ const recipes = [
         img: './assets/images/sugar.jpg',
         title: 'Sweet donuts',
         subtitle: 'Always include in your day a bit of sweetness',
-        description: 'Our favorite donuts subtly flavored with sugar powder are always available in our bakery.',
+        description: 'Our favorite donuts subtly flavored with sugar powder are always available in our bakery. Come and enjoy your delightful snack.',
         time: 25
     }
 ];
